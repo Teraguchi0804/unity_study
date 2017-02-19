@@ -74,6 +74,8 @@ test-results/
 # ---------- whole directory
 .idea/
 
+.idea/.idea.unity_study
+
 # User-specific stuff:
 # ///// .idea/workspace.xml
 # ///// .idea/tasks.xml
