@@ -24,6 +24,8 @@ public class test : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
+        //この場合のthisはGameObject
+        //Debug.Log(this);
         Player myPlayer = new Player();
         myPlayer.Attack();
         myPlayer.Damage(30);
