@@ -2,20 +2,31 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class test : MonoBehaviour {
+public class Player
+{
+    private int hp = 100;
+    private int power = 50;
 
-    int add(int a, int b)
+    public void Attack()
     {
-        int c = a + b;
-        return c;
+        Debug.Log(this.power + "のダメージを与えた");
     }
+
+    public void Damage(int damege)
+    {
+        this.hp -= damege;
+        Debug.Log(damege + "のダメージを受けた");
+    }
+}
+
+public class test : MonoBehaviour {
 
     // Use this for initialization
     void Start()
     {
-        int answer;
-        answer = add(2, 3);
-        Debug.Log(answer);
+        Player myPlayer = new Player();
+        myPlayer.Attack();
+        myPlayer.Damage(30);
     }
 
     // Update is called once per frame
